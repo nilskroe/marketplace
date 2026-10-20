@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "leadbase",
+  "type": "mcp",
+  "name": "Leadbase",
+  "tagline": "Research companies, contacts and products in editable sheets with sources",
+  "description": "Turn a research request into a new list with one company, professional contact, product or public post per row. Enrich empty cells in existing rows or entire columns, follow progress, and read available source evidence for citations. Results stay in your Leadbase workspace. Hosts with MCP Apps support can show the interactive sheet; other clients receive structured results and a Leadbase link. Requires a Leadbase account and workspace access. Research uses existing workspace credits and plan limits. The linked MIT repository contains the public integration bundle; the hosted service and private server implementation are separate.",
+  "author": {
+    "name": "Leadbase / Workbase Platforms sp. z o.o.",
+    "url": "https://www.leadbase.io"
+  },
+  "homepage": "https://www.leadbase.io/en/docs/settings/mcp",
+  "repo": "https://github.com/leadbaseio/leadbase-plugin",
+  "icon": "./icon.svg",
+  "tags": ["sales", "research", "data"],
+  "license": "MIT (integration bundle only)",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["leadbase", "--transport", "http", "https://www.leadbase.io/api/mcp"],
+    "notes": "Complete the host's OAuth sign-in and select your Leadbase workspace. No API key is required. Check your credit balance before research. Try: Find 5 independent coffee roasters in Berlin with official websites, save one company per row, and include sources. Review results and available evidence before using them. Setup: https://www.leadbase.io/en/docs/settings/mcp"
+  }
+}
